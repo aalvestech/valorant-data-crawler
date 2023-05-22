@@ -1,0 +1,18 @@
+#Conda
+conda
+
+#Env
+python-dotenv == 1.0.0
+
+#Analysis
+pandas == 2.0.0
+
+#Aws
+boto3 == 1.26.128
+
+#WebScraping
+selenium == 4.4.3
+webdriver-manager == 3.8.3
+
+#PathLib
+pathlib == 1.0.1
