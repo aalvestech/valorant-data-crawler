@@ -12,23 +12,25 @@ Before running the crawler, ensure you have the following:
 - Having an IAM user with read and write permissions on S3 buckets. [Link](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)
 - To create an S3 bucket with a name of your choice, follow these steps. Make sure to update the bucket name in the code within the AWS modules. [Link](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/creating-buckets-s3.html)
 - Your S3 bucket should have the following folder structure:
+<pre>
+```
 ├── valorant/
-│ ├── raw/
-│   ├── summary/
-│     ├── matches/
-│   ├── details/
-│     ├── matches/
-│ ├── cleaned/
-│   ├── details/
-│     ├── metadata/
-│     ├── player_loadout/
-│     ├── player_round_damage/
-│     ├── player_round_kills/
-│     ├── player_round/
-│     ├── player_summary/
-│     ├── round_summary/
-│     ├── team_summary/
-
+│   ├── raw/
+│   │   ├── summary/
+│   │   ├── matches/
+│   │   ├── details/
+│   ├── cleaned/
+│   │   ├── details/
+│   │   ├── metadata/
+│   │   ├── player_loadout/
+│   │   ├── player_round_damage/
+│   │   ├── player_round_kills/
+│   │   ├── player_round/
+│   │   ├── player_summary/
+│   │   ├── round_summary/
+│   │   ├── team_summary/
+```
+</pre>
 ## Installation
 
 1. Clone this repository: `https://github.com/aalvestech/valorant-data-crawler`
@@ -38,7 +40,9 @@ Before running the crawler, ensure you have the following:
 
 ## Folder Schema
 
-valorant-data-crawler.
+<pre>
+```
+valorant-data-crawler
 │   .env
 │   .gitignore
 │   chromedriver.exe
@@ -66,6 +70,8 @@ valorant-data-crawler.
     ├───raw_data
     │   │   get_raw_data.py
     │   │   __init__.py
+```
+</pre>
 
 - PS: Your repository should have the same folder structure as shown above.
 
