@@ -1,0 +1,21 @@
+version: "3"
+
+networks:
+    rede: 
+        driver: bridge
+
+services:
+ 
+  crawler:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    container_name: container_crawler_selenium_image
+    mem_limit: 8g
+    cpus: 4
+    ports:
+      - "4444:4444" 
+    volumes:
+      - ./:/home/jovyan/repos/valorant-analysis
+    networks: 
+      - rede
